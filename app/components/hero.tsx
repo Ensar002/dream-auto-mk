@@ -15,11 +15,10 @@ export default function Home() {
           <a href="/">Home</a>
           <a href="/cars">Our Cars</a>
           <a href="/about">About Us</a>
-          <a href="/services">Services</a>
           <a href="/contact">Contact</a>
         </div>
 
-        <a href="/cars" className="nav-button">Explore Cars</a>
+       
       </nav>
 
       <section className="hero">

@@ -1,4 +1,3 @@
-
 type CarCardProps = {
   name: string;
   image: string;

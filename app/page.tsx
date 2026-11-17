@@ -1,20 +1,20 @@
-
+import "./globals.css";
 const cars = [
   {
-    name: "Mercedes-Benz S-Class",
-    type: "Luxury Sedan",
+    name: "Mercedes-AMG GT",
+   type: "Luxury Sports Coupe",
     price: "€85,000",
     image: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=900",
   },
   {
-    name: "BMW M4 Competition",
-    type: "Sport Coupe",
+     name: "BMW M5",
+  type: "High-Performance Sedan",
     price: "€72,000",
     image: "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=900",
   },
   {
-    name: "Audi RS6 Avant",
-    type: "Performance Wagon",
+   name: "Audi R8 V10",
+   type: "V10 Supercar",
     price: "€95,000",
     image: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=900",
   },
@@ -30,11 +30,10 @@ export default function Home() {
           <a href="/">Home</a>
           <a href="/cars">Our Cars</a>
           <a href="/about">About Us</a>
-          <a href="/services">Services</a>
           <a href="/contact">Contact</a>
         </div>
 
-        <a href="/cars" className="nav-button">Explore Cars</a>
+       
       </nav>
 
       <section className="hero">
@@ -71,12 +70,12 @@ export default function Home() {
         <div className="car-grid">
           {cars.map((car) => (
             <article className="car-card" key={car.name}>
-              <div className="car-placeholder">DREAM AUTO MK</div>
+             <img src={car.image} alt={car.name} className="car-image" />
               <div className="car-info">
                 <p>{car.type}</p>
                 <h3>{car.name}</h3>
                 <strong>{car.price}</strong>
-                <a href="/cars">View Details →</a>
+               
               </div>
             </article>
           ))}
